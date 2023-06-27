@@ -16,6 +16,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -56,6 +57,82 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="open-menu-btn" data-menu-open>
+          <svg class="menu-hamburger" width="32" height="22">
+            <use href="./images/icons.svg#icon-icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="close-menu-btn" data-menu-close>
+            <svg class="menu-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link current link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul id="contact" class="menu-address list">
+            <li class="menu-address-item">
+              <a class="menu-address-link link number" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="menu-address-item">
+              <a
+                class="menu-address-link link menu-mail"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-soc-list">
+            <li class="menu-soc-item">
+              <a class="menu-soc-link" href="">
+                <svg class="menu-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a class="menu-soc-link" href=""
+                ><svg class="menu-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a class="menu-soc-link" href=""
+                ><svg class="menu-soc-icon" width="16" height="16">
+                  <use
+                    href="./images/icons.svg#icon-facebook-1"
+                  ></use></svg></a>
+            </li>
+            <li class="menu-soc-item">
+              <a class="menu-soc-link" href=""
+                ><svg class="menu-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
       </div>
     </header>
 
@@ -73,7 +150,7 @@
         <div class="container container-motto">
           <h2 class="visually-hidden">Motto</h2>
           <ul class="motto-lict list">
-            <li class="motto-item list">
+            <li class="motto-item ">
               <div class="motto-item-block">
                 <svg class="motto-item-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
@@ -85,7 +162,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="motto-item list">
+            <li class="motto-item ">
               <div class="motto-item-block">
                 <svg class="motto-item-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock-1"></use>
@@ -97,7 +174,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="motto-item list">
+            <li class="motto-item ">
               <div class="motto-item-block">
                 <svg class="motto-item-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
@@ -109,7 +186,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="motto-item list">
+            <li class="motto-item ">
               <div class="motto-item-block">
                 <svg class="motto-item-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
@@ -130,24 +207,24 @@
           <h2 class="products-title">What Are We Doing</h2>
           <ul class="products-list list">
             <li class="products-item list">
-              <img src="./images/Rec_710.jpg" alt="Strategy" width="360" />
+              <img srcset="./images/Rec_710.jpg 1x, ./images/Rect_710-2x.jpg 2x" src="./images/Rec_710.jpg" alt="Strategy" width="360" />
             </li>
             <li class="products-item list">
-              <img src="./images/Rec_711.jpg" alt="Diligence" width="360" />
+              <img srcset="./images/Rec_711.jpg 1x, ./images/Rect_711-2x.jpg 2x" src="./images/Rec_711.jpg" alt="Diligence" width="360" />
             </li>
             <li class="products-item list">
-              <img src="./images/Rec_712.jpg" alt="Technologies" width="360" />
+              <img srcset="./images/Rec_712.jpg 1x, ./images/Rect_712-2x.jpg 2x" src="./images/Rec_712.jpg" alt="Technologies" width="360" />
             </li>
           </ul>
         </div>
       </section>
 
       <section id="portfolio" class="team">
-        <div class="container">
+        <div class="container container-team">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img src="./images/img_.jpg" alt="Mark Guerrero" width="264" />
+              <img srcset="./images/img_.jpg 1x, ./images/img-team-2x.jpg 2x" src="./images/img_.jpg" alt="Mark Guerrero" width="264" />
               <div class="team-cart">
                 <h3 class="team-item-title">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -186,7 +263,7 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/img1.jpg" alt="Tom Ford" width="264" />
+              <img srcset="./images/img1.jpg 1x, ./images/img_1-team-2x.jpg 2x"  src="./images/img1.jpg" alt="Tom Ford" width="264" />
               <div class="team-cart">
                 <h3 class="team-item-title">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -224,7 +301,7 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/img2.jpg" alt="Camila Garcia" width="264" />
+              <img srcset="./images/img2.jpg 1x, ./images/img_2-team-2x.jpg 2x"  src="./images/img2.jpg" alt="Camila Garcia" width="264" />
               <div class="team-cart">
                 <h3 class="team-item-title">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -263,7 +340,7 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/img3.jpg" alt="Daniel Wilson" width="264" />
+              <img srcset="./images/img3.jpg 1x, ./images/img_3-team-2x.jpg 2x" src="./images/img3.jpg" alt="Daniel Wilson" width="264" />
               <div class="team-cart">
                 <h3 class="team-item-title">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -302,53 +379,58 @@
           </ul>
         </div>
       </section>
+
+
       <section class="customer">
         <div class="container container-customer">
           <h2 class="customer-title">Customers</h2>
-          <ul class="customer-list list">
-            <li class="customer-item list">
-              <a class="customer-link" href="" target="_blank"
-                ><svg class="customer-item-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customer-item list">
-              <a class="customer-link" href="" target="_blank"
-                ><svg class="customer-item-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo_1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customer-item list">
-              <a class="customer-link" href="" target="_blank"
-                ><svg class="customer-item-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo_2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customer-item list">
-              <a class="customer-link" href="" target="_blank"
-                ><svg class="customer-item-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo_3"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customer-item list">
-              <a class="customer-link" href="" target="_blank"
-                ><svg class="customer-item-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo_4"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="customer-item list">
-              <a class="customer-link" href="" target="_blank"
-                ><svg class="customer-item-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo_5"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="customer-wrap">
+            <ul class="customer-list list">
+              <li class="customer-item ">
+                <a class="customer-link" href="" target="_blank"
+                  ><svg class="customer-item-icon" width="104" height="56">
+                    <use href="./images/icons.svg#icon-Logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="customer-item ">
+                <a class="customer-link" href="" target="_blank"
+                  ><svg class="customer-item-icon" width="104" height="56">
+                    <use href="./images/icons.svg#icon-Logo_1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="customer-item ">
+                <a class="customer-link" href="" target="_blank"
+                  ><svg class="customer-item-icon" width="104" height="56">
+                    <use href="./images/icons.svg#icon-Logo_2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="customer-item ">
+                <a class="customer-link" href="" target="_blank"
+                  ><svg class="customer-item-icon" width="104" height="56">
+                    <use href="./images/icons.svg#icon-Logo_3"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="customer-item ">
+                <a class="customer-link" href="" target="_blank"
+                  ><svg class="customer-item-icon" width="104" height="56">
+                    <use href="./images/icons.svg#icon-Logo_4"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="customer-item ">
+                <a class="customer-link" href="" target="_blank"
+                  ><svg class="customer-item-icon" width="104" height="56">
+                    <use href="./images/icons.svg#icon-Logo_5"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          
         </div>
       </section>
     </main>
@@ -356,7 +438,7 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo">
-          <a href="./index.html" class="header-logo link"
+          <a href="./index.html" class="header-logo footer-logo-link link"
             >Web<span class="footer-span">Studio</span></a
           >
           <p class="footer-text">
@@ -501,5 +583,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
