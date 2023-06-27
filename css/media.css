@@ -205,14 +205,14 @@
   }
 
   
-  .footer-container {
+  /* .footer-container {
     
     width: 768px;
     display: flex;
     flex-direction: row;
     
 
-  }
+  } */
 
  
   /* .footer-logo-link {
@@ -239,13 +239,17 @@
   /* .footer-contact {
     display: block;
   } */
-  /* .footer-field {
+  .footer-field {
+    
     flex-direction: row;
     
-  }  */
+
+    
+  } 
 
   .footer-input {
     min-width: 264px;
+    
   }
 
 @media screen and (min-width: 1128px) {
