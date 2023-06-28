@@ -125,18 +125,20 @@ img {
   width: 100vw;
   height: 100vh;
   top: 0;
-  z-index: 2;
+  z-index: 999;
   background-color: #fff; 
-  padding-top: 24px;
-  padding-right: 24px;
-  padding-bottom: 40px;
-  padding-left: 40px;
+  padding: 80px 35px 40px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: auto;
+  /* overflow: auto; */
+  transform: translateX(100%);
+  transition: transform var(--transition)
 }
 
+.mob-menu.is-open {
+  transform: translateX(0);
+}
 .open-menu-btn {
   display: block;
   margin-left: auto;
@@ -150,6 +152,7 @@ img {
   padding: 0;
   background-color: transparent;
   border: none;
+  
 }
 
 .close-menu-btn {
@@ -169,10 +172,14 @@ img {
 .mob-menu-list {
   padding-top: 56px;
   margin-bottom: 50px;
-  
 }
+
 .mob-menu-item:not(:last-child){
   margin-bottom: 40px;
+}
+
+.mob-menu-link:hover, .mob-menu-link:focus {
+  color: #404BBF;
 }
 
 .mob-menu-link {
@@ -180,7 +187,7 @@ img {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  color: 2E2F42;
+  color: #2E2F42;
 }
 
 .menu-address-item:not(:last-child){
@@ -331,8 +338,8 @@ img {
   gap: 72px;
 }
 .motto-subtitle {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
@@ -351,10 +358,11 @@ img {
 
 .motto-item-text {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  width: 100% auto;
+  width: 100%;
 }
 
 
@@ -383,7 +391,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin:  auto;
+  
   background-color: #f4f4fd;
   padding: 96px 82px;
 }
@@ -424,6 +432,7 @@ img {
 .team-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 72px;
 }
 
@@ -826,6 +835,10 @@ img {
   overflow: hidden;
 }
 
+.gallery-block > img {
+  width: 100%;
+  height: auto;
+}
 .gallery-link:hover .gallery-cover-text {
   transform: translateY(0%);
 }
@@ -889,7 +902,8 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition);
-  width: 408px;
+  width: calc(100% - 36px);
+  max-width: 408px;
   min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -933,7 +947,7 @@ img {
 
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0.8);
 }
 
 .is-hidden {
