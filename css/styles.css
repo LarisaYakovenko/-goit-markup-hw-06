@@ -83,8 +83,6 @@ img {
   align-items: baseline;
   padding-top: 24px;
   padding-bottom: 22px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .header-menu {
@@ -120,20 +118,23 @@ img {
   display: none;
 }
 
+
 .mob-menu {
   position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
-  z-index: 999;
+  z-index: 2;
   background-color: #fff; 
   padding: 80px 35px 40px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* overflow: auto; */
+  overflow: auto;
   transform: translateX(100%);
-  transition: transform var(--transition)
+  transition: transform var(--transition);
+  
+  
 }
 
 .mob-menu.is-open {
@@ -142,7 +143,6 @@ img {
 .open-menu-btn {
   display: block;
   margin-left: auto;
-  position: absolute;
   top: 24px;
   right: 16px;
   width: 32px;
@@ -152,7 +152,6 @@ img {
   padding: 0;
   background-color: transparent;
   border: none;
-  
 }
 
 .close-menu-btn {
@@ -212,7 +211,7 @@ img {
   font-family: Roboto;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
 }
 
 .menu-soc-list {
@@ -244,6 +243,10 @@ img {
   display: block;
   fill: #f4f4fd;
   transform: background-color var(--transition);
+}
+
+.menu-address-link {
+
 }
 
 /*hero*/
@@ -338,8 +341,8 @@ img {
   gap: 72px;
 }
 .motto-subtitle {
-  font-weight: 700;
-  font-size: 36px;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
@@ -358,7 +361,7 @@ img {
 
 .motto-item-text {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);

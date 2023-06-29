@@ -13,7 +13,6 @@
 
   .header-container {
     max-width: 100%;
-    padding: 0 16px;
     align-items: center;
   }
 
@@ -180,9 +179,6 @@
     
   }
 
-  .motto-item-block {
-    
-  }
   .motto-subtitle {
     display: flex;
     justify-content: flex-start;
@@ -280,7 +276,7 @@
 
 @media screen and (min-width: 1128px) {
   .container {
-    max-width: 1128px;
+    max-width: 1440px;
   }
 
 
@@ -292,12 +288,10 @@
 
   .header-container {
     display: flex;
-    padding: 0;
-    padding: 0 156px;
+   
   }
   
   .header-menu {
-    display: flex;
     gap: 40px;
   }
   
@@ -589,6 +583,10 @@
 
   .user-mail {
     max-width: 312px;
+  }
+
+  .mob-menu {
+    display: none;
   }
 
 }
