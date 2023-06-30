@@ -333,17 +333,18 @@ img {
   align-items: center;
   margin:  auto;
   padding: 0;
+  margin-bottom: 96px;
  }
 
 .motto-lict {
   display: flex;
-  flex-wrap:wrap ;
+  flex-wrap: wrap ;
   gap: 72px;
 }
 .motto-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
   margin-bottom: 8px;
@@ -361,7 +362,7 @@ img {
 
 .motto-item-text {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
@@ -397,6 +398,10 @@ img {
   
   background-color: #f4f4fd;
   padding: 96px 82px;
+}
+
+.container-team {
+  width: 294px;
 }
 
 .team-item {
